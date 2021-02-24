@@ -8,12 +8,15 @@
 <!--  -->
 <img src="{{user.image_url}}" alt="User image">
 
-<!-- <a href="/users/{{user.id}}/edit">Edit</a> -->
-<button><a href="/users/{{user.id}}/edit">Edit</a></button>
+<br>
 
-users/<int:user_id>/delete
-<form action="/users/{{user.id}}/delete" method="POST">
-    <button>Delete</button>
+<!-- <a href="/users/{{user.id}}/edit">Edit</a> -->
+
+
+
+<form >
+    <button formaction="/users/{{user.id}}/edit" formmethod="GET">Edit</button>
+    <button formaction="/users/{{user.id}}/delete" formmethod="POST">Delete</button>
 </form>
 <!-- <a href="/users">All Users</a> -->
 
